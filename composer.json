@@ -1,0 +1,12 @@
+{
+    "name": "microdel/dto",
+    "description": "The dto models with type hinting",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Denis Gostroushko",
+            "email": "microdel@bk.ru"
+        }
+    ],
+    "require": {}
+}
