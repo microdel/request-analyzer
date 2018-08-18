@@ -1,12 +1,12 @@
 {
-    "name": "microdel/dto",
-    "description": "The dto models with type hinting",
+    "name": "microdel/request-analyzer",
+    "description": "The request analyzed",
     "type": "library",
-    "authors": [
-        {
-            "name": "Denis Gostroushko",
-            "email": "microdel@bk.ru"
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Microdel\\RequestAnalyzer\\": "src/"
         }
-    ],
-    "require": {}
+    }
 }

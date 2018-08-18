@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+
+  php:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+          hostUID: 1000
+          hostGID: 1000
+    image: request-analyzer
+    hostname: request-analyzer
+    container_name: request-analyzer
+    volumes:
+    - .:/usr/src/myapp
+    - ~/.composer:/root/.composer
