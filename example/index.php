@@ -27,17 +27,7 @@ $requestAnalyzer = new RequestAnalyzer();
 $requests = $requestGenerator->getRequests(1000000);
 
 foreach ($requests as $request) {
-    $start = microtime(true);
     $requestAnalyzer->addRequest($request);
-    $time = microtime(true) - $start;
-
-//    var_dump($time);
-
-    if ($time > 0.0001) {
-        $requestAnalyzer->count();
-        var_dump($time);
-        var_dump('tttt');
-    }
 }
 
-//var_dump($requestAnalyzer->getTop(10));
+var_dump($requestAnalyzer->getTop(10));

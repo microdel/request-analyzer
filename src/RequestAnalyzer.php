@@ -58,9 +58,4 @@ class RequestAnalyzer
     {
         return $this->storage->max($count);
     }
-
-    public function count()
-    {
-        var_dump($this->storage->count());
-    }
 }

@@ -64,7 +64,7 @@ class RequestGenerator
     {
         $randomKey = array_rand($this->urls, 1);
 
-        return $this->urls[$randomKey] . '?' . $this->getRandomParam();
+        return $this->urls[$randomKey];
     }
 
     /**
